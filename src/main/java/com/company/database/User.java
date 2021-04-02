@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class UserDao {
+public class User {
     Connection conn = DbConnection.getConnection();
 
     public void addUser(UserEntity user) {

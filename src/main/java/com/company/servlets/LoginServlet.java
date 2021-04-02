@@ -1,6 +1,6 @@
 package com.company.servlets;
 
-import com.company.database.UserDao;
+import com.company.database.User;
 import com.company.entities.UserEntity;
 
 import javax.servlet.ServletException;
@@ -22,7 +22,7 @@ public class LoginServlet extends BaseServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserDao userDao = new UserDao();
+        User userDao = new User();
         UserEntity user = userDao.getUserByLogin(req.getParameter("login"));
 
         if (user != null && user.getPassword().equals(req.getParameter("password"))) {

@@ -1,7 +1,7 @@
 package com.company.servlets;
 
 import com.company.database.DbConnection;
-import com.company.database.NewsDao;
+import com.company.database.News;
 import com.company.entities.NewsEntity;
 
 import javax.servlet.ServletException;
@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
 import java.util.ArrayList;
-import java.util.List;
 
 @WebServlet(
         name = "homeServlet",
@@ -22,7 +21,7 @@ public class HomeServlet extends BaseServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Connection conn = DbConnection.getConnection();
 
-        NewsDao newsDao = new NewsDao();
+        News newsDao = new News();
 
         ArrayList<NewsEntity> newsList = newsDao.getAllNews();
 

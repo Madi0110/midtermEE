@@ -1,7 +1,7 @@
 package com.company.servlets;
 
-import com.company.database.NewsDao;
-import com.company.database.UserDao;
+import com.company.database.News;
+import com.company.database.User;
 import com.company.entities.NewsEntity;
 import com.company.entities.UserEntity;
 
@@ -18,8 +18,8 @@ import java.io.IOException;
 public class NewsViewServlet extends BaseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        NewsDao newsDao = new NewsDao();
-        UserDao userDao = new UserDao();
+        News newsDao = new News();
+        User userDao = new User();
 
         NewsEntity news = newsDao.getNews(Integer.parseInt(req.getParameter("v")));
         UserEntity user = userDao.getUser(news.getAuthorId());

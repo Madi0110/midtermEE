@@ -1,6 +1,6 @@
 package com.company.servlets;
 
-import com.company.database.NewsDao;
+import com.company.database.News;
 import com.company.entities.NewsEntity;
 
 import javax.servlet.ServletException;
@@ -21,7 +21,7 @@ public class NewsServlet extends BaseServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        NewsDao newsDao = new NewsDao();
+        News newsDao = new News();
 
         newsDao.addNews(new NewsEntity(
                 req.getParameter("title"),

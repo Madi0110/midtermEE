@@ -1,7 +1,6 @@
 package com.company.servlets;
 
-import com.company.database.DbConnection;
-import com.company.database.UserDao;
+import com.company.database.User;
 import com.company.entities.UserEntity;
 
 import javax.servlet.ServletException;
@@ -9,7 +8,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Connection;
 
 @WebServlet(
         name = "registerServlet",
@@ -23,7 +21,7 @@ public class RegisterServlet extends BaseServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserDao userDao = new UserDao();
+        User userDao = new User();
 
         userDao.addUser( new UserEntity(
                 req.getParameter("login"),

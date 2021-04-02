@@ -1,16 +1,15 @@
 package com.company.database;
 
+import com.company.database.DbConnection;
 import com.company.entities.NewsEntity;
-import com.company.entities.UserEntity;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
 
-public class NewsDao {
+public class News {
     Connection conn = DbConnection.getConnection();
 
     public void addNews(NewsEntity news) {

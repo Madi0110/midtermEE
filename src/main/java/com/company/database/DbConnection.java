@@ -18,7 +18,7 @@ public class DbConnection {
 
             Statement stmt;
 
-            // Create tables schema
+
             stmt = c.createStatement();
             stmt.execute("CREATE TABLE IF NOT EXISTS users (\n" +
                     "    user_id INTEGER NOT NULL PRIMARY KEY,\n" +
