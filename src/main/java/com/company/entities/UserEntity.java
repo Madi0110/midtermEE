@@ -30,6 +30,9 @@ public class UserEntity {
         this.lname = lname;
     }
 
+    public UserEntity() {
+    }
+
     @Override
     public String toString() {
         return "UserEntity{" +

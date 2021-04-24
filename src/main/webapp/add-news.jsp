@@ -5,6 +5,9 @@
         <input type="text" name="title" placeholder="Title" /><br />
         <textarea name="body" placeholder="Body"></textarea><br />
         <input type="submit" name="submit" value="Submit" />
+
     </form>
 </div>
 <%@ include file="templates/footer.jsp" %>
+
+

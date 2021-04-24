@@ -27,10 +27,7 @@ public class LoginServlet extends BaseServlet {
 
         if (user != null && user.getPassword().equals(req.getParameter("password"))) {
             HttpSession session = req.getSession();
-            session.setAttribute("id", user.getId());
-            session.setAttribute("login", user.getLogin());
-            session.setAttribute("fname", user.getFname());
-            session.setAttribute("lname", user.getLname());
+            session.setAttribute("user", user);
         }
         else {
             System.out.println("Failed to login.");
