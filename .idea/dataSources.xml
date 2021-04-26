@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="postgres@localhost" uuid="ef169c57-f2a2-4b74-81dd-32891795bc5a">
+    <data-source source="LOCAL" name="postgres@localhost" group="my" uuid="ef169c57-f2a2-4b74-81dd-32891795bc5a">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="identifier.sqlite" uuid="022e751e-3638-4d2a-99ab-82b2d46fc3a4">
+    <data-source source="LOCAL" name="my [2]" uuid="7469e886-f022-4f39-ab5b-cf26ba7d24d6">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:identifier.sqlite</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="identifier" uuid="f65940f7-ef28-40a3-9338-e168b918a285">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Madiyar\Desktop\ead2-midterm\identifier.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Madiyar\Desktop\ead2-midterm\my.postgresql</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>

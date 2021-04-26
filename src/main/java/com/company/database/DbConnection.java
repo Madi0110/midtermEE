@@ -14,7 +14,7 @@ public class DbConnection {
 
     private static Connection getConn() {
         try {
-            Connection c = DriverManager.getConnection("jdbc:sqlite:my.db");
+            Connection c = DriverManager.getConnection("jdbc:sqlite:my.postgresql");
 
             Statement stmt;
 
